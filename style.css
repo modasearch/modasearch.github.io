@@ -32,11 +32,6 @@ body {
     color: #8b6b61;
 }
 
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
 .nav-links a {
     color: #6d4c41;
     text-decoration: none;
@@ -45,13 +40,16 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 8px;
     display: inline-block;
+    /* Dodajemy flex dla ikonek */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.nav-links a:hover {
-    color: #a1887f;
-    background: rgba(139, 107, 97, 0.1);
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.nav-links a i {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
 }
 
 /* Hamburger menu */
@@ -547,3 +545,4 @@ footer {
         transform: translateY(-5px);
     }
 }
+
